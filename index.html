@@ -124,48 +124,53 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact perspective-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title floating-element" data-depth="0.1">Get In Touch</h2>
             <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>email@example.com</p>
+                <div class="contact-info 3d-card transform-element">
+                    <div class="contact-item floating-element" data-depth="0.2">
+                        <i class="fas fa-envelope icon-3d"></i>
+                        <p class="floating-text" data-depth="0.3">email@example.com</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+1 (123) 456-7890</p>
+                    <div class="contact-item floating-element" data-depth="0.2">
+                        <i class="fas fa-phone icon-3d"></i>
+                        <p class="floating-text" data-depth="0.3">+1 (123) 456-7890</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>City, Country</p>
+                    <div class="contact-item floating-element" data-depth="0.2">
+                        <i class="fas fa-map-marker-alt icon-3d"></i>
+                        <p class="floating-text" data-depth="0.3">City, Country</p>
                     </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    <div class="social-links transform-element">
+                        <a href="#" class="hoverable-link" data-depth="0.2"><i class="fab fa-github icon-3d"></i></a>
+                        <a href="#" class="hoverable-link" data-depth="0.2"><i class="fab fa-linkedin icon-3d"></i></a>
+                        <a href="#" class="hoverable-link" data-depth="0.2"><i class="fab fa-twitter icon-3d"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                <form class="contact-form 3d-card transform-element">
+                    <div class="form-group floating-element" data-depth="0.2">
+                        <input type="text" placeholder="Your Name" required class="transform-element">
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                    <div class="form-group floating-element" data-depth="0.2">
+                        <input type="email" placeholder="Your Email" required class="transform-element">
                     </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                    <div class="form-group floating-element" data-depth="0.2">
+                        <textarea placeholder="Your Message" required class="transform-element"></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn 3d-button transform-element" data-depth="0.3">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="perspective-section">
         <div class="container">
-            <p>&copy; 2023 Preet Moga. All Rights Reserved.</p>
+            <p class="floating-text" data-depth="0.1">&copy; 2023 <span class="accent transform-element">Preet Moga</span>. All Rights Reserved.</p>
+            <div class="back-to-top transform-element">
+                <a href="#" class="hoverable-link" data-depth="0.2">
+                    <i class="fas fa-arrow-up icon-3d"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
