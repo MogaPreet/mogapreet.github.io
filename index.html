@@ -6,116 +6,117 @@
     <title>Portfolio | Preet Moga</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Portfolio of Preet Moga - Web Developer & Designer">
 </head>
-<body>
-    <header>
+<body class="three-d-space">
+    <header class="floating-element" data-depth="0.1">
         <div class="container">
             <nav>
-                <div class="logo">Preet Moga</div>
+                <div class="logo transform-element">Preet Moga</div>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" class="hoverable-link" data-depth="0.2">About</a></li>
+                    <li><a href="#skills" class="hoverable-link" data-depth="0.2">Skills</a></li>
+                    <li><a href="#projects" class="hoverable-link" data-depth="0.2">Projects</a></li>
+                    <li><a href="#contact" class="hoverable-link" data-depth="0.2">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Hi, I'm <span>Preet Moga</span></h1>
-            <p>Web Developer & Designer</p>
-            <a href="#contact" class="btn">Get in touch</a>
+    <section class="hero perspective-container">
+        <div class="container 3d-layer" data-depth="0.1">
+            <h1 class="floating-element">Hi, I'm <span class="accent transform-element">Preet Moga</span></h1>
+            <p class="floating-text" data-depth="0.3">Web Developer & Designer</p>
+            <a href="#contact" class="btn 3d-button transform-element" data-depth="0.5">Get in touch</a>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about perspective-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
+            <h2 class="section-title floating-element" data-depth="0.1">About Me</h2>
+            <div class="about-content 3d-card transform-element">
                 <div class="about-text">
-                    <p>I'm a passionate web developer with a keen eye for design and a commitment to creating responsive, user-friendly websites. With expertise in both front-end and back-end technologies, I strive to build applications that are not only functional but also aesthetically pleasing.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying outdoor activities.</p>
+                    <p class="floating-text" data-depth="0.2">I'm a passionate web developer with a keen eye for design and a commitment to creating responsive, user-friendly websites. With expertise in both front-end and back-end technologies, I strive to build applications that are not only functional but also aesthetically pleasing.</p>
+                    <p class="floating-text" data-depth="0.3">When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying outdoor activities.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills" class="skills perspective-section">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <h2 class="section-title floating-element" data-depth="0.1">My Skills</h2>
             <div class="skills-container">
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Front-end</h3>
+                <div class="skill-card 3d-card transform-element" data-index="0">
+                    <i class="fas fa-code icon-3d"></i>
+                    <h3 class="floating-text">Front-end</h3>
                     <p>HTML5, CSS3, JavaScript, React, Vue.js</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Back-end</h3>
+                <div class="skill-card 3d-card transform-element" data-index="1">
+                    <i class="fas fa-server icon-3d"></i>
+                    <h3 class="floating-text">Back-end</h3>
                     <p>Node.js, Express, Python, PHP</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Database</h3>
+                <div class="skill-card 3d-card transform-element" data-index="2">
+                    <i class="fas fa-database icon-3d"></i>
+                    <h3 class="floating-text">Database</h3>
                     <p>MongoDB, MySQL, PostgreSQL</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Tools</h3>
+                <div class="skill-card 3d-card transform-element" data-index="3">
+                    <i class="fas fa-tools icon-3d"></i>
+                    <h3 class="floating-text">Tools</h3>
                     <p>Git, Docker, AWS, Figma</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="projects perspective-section">
         <div class="container">
-            <h2 class="section-title">Recent Projects</h2>
+            <h2 class="section-title floating-element" data-depth="0.1">Recent Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card 3d-card transform-element" data-index="0">
                     <div class="project-info">
-                        <h3>E-commerce Website</h3>
+                        <h3 class="floating-text" data-depth="0.2">E-commerce Website</h3>
                         <p>A full-stack e-commerce platform with payment integration and admin dashboard.</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+                            <span class="tech-tag transform-element">React</span>
+                            <span class="tech-tag transform-element">Node.js</span>
+                            <span class="tech-tag transform-element">MongoDB</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn-small">Live Demo</a>
-                            <a href="#" class="btn-small">GitHub</a>
+                            <a href="#" class="btn-small 3d-button">Live Demo</a>
+                            <a href="#" class="btn-small 3d-button">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card 3d-card transform-element" data-index="1">
                     <div class="project-info">
-                        <h3>Portfolio Website</h3>
+                        <h3 class="floating-text" data-depth="0.2">Portfolio Website</h3>
                         <p>A responsive portfolio website with modern design and animations.</p>
                         <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+                            <span class="tech-tag transform-element">HTML</span>
+                            <span class="tech-tag transform-element">CSS</span>
+                            <span class="tech-tag transform-element">JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn-small">Live Demo</a>
-                            <a href="#" class="btn-small">GitHub</a>
+                            <a href="#" class="btn-small 3d-button">Live Demo</a>
+                            <a href="#" class="btn-small 3d-button">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card 3d-card transform-element" data-index="2">
                     <div class="project-info">
-                        <h3>Task Management App</h3>
+                        <h3 class="floating-text" data-depth="0.2">Task Management App</h3>
                         <p>A productivity app for organizing tasks with user authentication.</p>
                         <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Express</span>
-                            <span>PostgreSQL</span>
+                            <span class="tech-tag transform-element">Vue.js</span>
+                            <span class="tech-tag transform-element">Express</span>
+                            <span class="tech-tag transform-element">PostgreSQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn-small">Live Demo</a>
-                            <a href="#" class="btn-small">GitHub</a>
+                            <a href="#" class="btn-small 3d-button">Live Demo</a>
+                            <a href="#" class="btn-small 3d-button">GitHub</a>
                         </div>
                     </div>
                 </div>
