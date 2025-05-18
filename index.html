@@ -6,118 +6,175 @@
     <title>Portfolio | Preet Moga</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="description" content="Portfolio of Preet Moga - Flutter Developer & UI Designer">
-    <script defer src="script.js"></script>
+    <meta name="description" content="Portfolio of Preet Moga - Flutter Developer & Full Stack Developer">
 </head>
-<body class="three-d-space">
-    <header class="floating-element" data-depth="0.1">
+<body>
+    <header>
         <div class="container">
             <nav>
-                <div class="logo transform-element">Preet Moga</div>
+                <div class="logo">Preet Moga</div>
                 <ul class="nav-links">
-                    <li><a href="#about" class="hoverable-link" data-depth="0.2">About</a></li>
-                    <li><a href="#skills" class="hoverable-link" data-depth="0.2">Skills</a></li>
-                    <li><a href="#projects" class="hoverable-link" data-depth="0.2">Projects</a></li>
-                    <li><a href="#contact" class="hoverable-link" data-depth="0.2">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero perspective-container">
-        <div class="container three-d-layer" data-depth="0.1">
-            <h1 class="floating-element">Hi, I'm <span class="accent transform-element">Preet Moga</span></h1>
-            <p class="floating-text" data-depth="0.3">Flutter Developer & UI Designer</p>
-            <a href="#contact" class="btn three-d-button transform-element" data-depth="0.5">Get in touch</a>
+    <section class="hero">
+        <div class="container">
+            <h1>Hi, I'm <span class="accent">Preet Moga</span></h1>
+            <p>Flutter & Full Stack Developer</p>
+            <a href="#contact" class="btn">Get in touch</a>
         </div>
     </section>
 
-    <section id="about" class="about perspective-section">
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title floating-element" data-depth="0.1">About Me</h2>
-            <div class="about-content three-d-card transform-element">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
                 <div class="about-text">
-                    <p class="floating-text" data-depth="0.2">I'm a passionate Flutter developer with a keen eye for design and a commitment to creating beautiful, responsive mobile applications. I specialize in crafting fluid UI experiences and efficient app architectures that deliver exceptional performance across platforms.</p>
-                    <p class="floating-text" data-depth="0.3">I'm comfortable with all state management solutions including Provider, Bloc, Riverpod, and GetX, allowing me to choose the best approach for each project. When I'm not coding, you can find me exploring new design trends, contributing to open source, or sketching UI concepts.</p>
+                    <p>I'm a passionate Flutter and Full Stack developer with a commitment to creating beautiful, responsive applications. I specialize in crafting fluid UI experiences and efficient app architectures that deliver exceptional performance across platforms.</p>
+                    <p>I'm comfortable with all state management solutions including Provider, Bloc, Riverpod, and GetX for Flutter, as well as full-stack technologies like React, Node.js, Express, and MySQL. When I'm not coding, you can find me exploring new technologies, contributing to open source, or sketching UI concepts.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills perspective-section">
+    <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title floating-element" data-depth="0.1">My Skills</h2>
+            <h2 class="section-title">My Skills</h2>
             <div class="skills-container">
-                <div class="skill-card three-d-card transform-element" data-index="0">
+                <div class="skill-card">
                     <i class="fas fa-mobile-alt icon-3d"></i>
-                    <h3 class="floating-text">Flutter</h3>
-                    <p>UI Design, Animation, Custom Widgets, Cross-platform</p>
+                    <h3>Flutter</h3>
+                    <p>UI Development, Custom Widgets, Cross-platform, State Management</p>
                 </div>
-                <div class="skill-card three-d-card transform-element" data-index="1">
+                <div class="skill-card">
                     <i class="fas fa-code icon-3d"></i>
-                    <h3 class="floating-text">State Management</h3>
-                    <p>Provider, Bloc, Riverpod, GetX, MobX</p>
+                    <h3>Frontend</h3>
+                    <p>React, HTML, CSS, JavaScript, Responsive Design</p>
                 </div>
-                <div class="skill-card three-d-card transform-element" data-index="2">
-                    <i class="fas fa-database icon-3d"></i>
-                    <h3 class="floating-text">Backend</h3>
-                    <p>Firebase, REST APIs, GraphQL, SQLite</p>
+                <div class="skill-card">
+                    <i class="fas fa-server icon-3d"></i>
+                    <h3>Backend</h3>
+                    <p>Node.js, Express, MySQL, Firebase, REST APIs</p>
                 </div>
-                <div class="skill-card three-d-card transform-element" data-index="3">
-                    <i class="fas fa-paint-brush icon-3d"></i>
-                    <h3 class="floating-text">UI/UX Design</h3>
-                    <p>Figma, Adobe XD, Material Design, Custom Themes</p>
+                <div class="skill-card">
+                    <i class="fas fa-cloud icon-3d"></i>
+                    <h3>Deployment</h3>
+                    <p>VPS, Nginx, PM2, CI/CD, Docker</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects perspective-section">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title floating-element" data-depth="0.1">Recent Projects</h2>
+            <h2 class="section-title">Recent Projects</h2>
             <div class="projects-grid">
-                <div class="project-card three-d-card transform-element" data-index="0">
+                <div class="project-card">
                     <div class="project-info">
-                        <h3 class="floating-text" data-depth="0.2">E-commerce App</h3>
-                        <p>A feature-rich shopping app with animations, payment integration, and offline capabilities.</p>
+                        <h3>VROTT - OTT Platform</h3>
+                        <p>A premium OTT application with video streaming, subscription management, and personalized content recommendations.</p>
                         <div class="project-tech">
-                            <span class="tech-tag transform-element">Flutter</span>
-                            <span class="tech-tag transform-element">Bloc</span>
-                            <span class="tech-tag transform-element">Firebase</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Bloc</span>
+                            <span class="tech-tag">Video Streaming</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn-small three-d-button">Live Demo</a>
-                            <a href="#" class="btn-small three-d-button">GitHub</a>
+                            <a href="https://play.google.com/store/apps/details?id=io.binarynumbers.vrott.ott" class="btn-small">Play Store</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card three-d-card transform-element" data-index="1">
+                <div class="project-card">
                     <div class="project-info">
-                        <h3 class="floating-text" data-depth="0.2">Social Media App</h3>
-                        <p>A social networking app with real-time chat, post sharing, and custom animations.</p>
+                        <h3>Empire Cinemas</h3>
+                        <p>Cinema ticketing application with seat selection, booking management, and payment integration.</p>
                         <div class="project-tech">
-                            <span class="tech-tag transform-element">Flutter</span>
-                            <span class="tech-tag transform-element">Provider</span>
-                            <span class="tech-tag transform-element">Socket.io</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Provider</span>
+                            <span class="tech-tag">Payment Gateway</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn-small three-d-button">Live Demo</a>
-                            <a href="#" class="btn-small three-d-button">GitHub</a>
+                            <a href="https://play.google.com/store/search?q=empire%20cinemas&c=apps" class="btn-small">Play Store</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card three-d-card transform-element" data-index="2">
+                <div class="project-card">
                     <div class="project-info">
-                        <h3 class="floating-text" data-depth="0.2">Task Management App</h3>
-                        <p>A productivity app with beautiful UI, dark mode, and cloud synchronization.</p>
+                        <h3>MACC India Website</h3>
+                        <p>Full stack web application with custom CMS, user management, and responsive design. Built with React frontend, Express/Node.js backend, and MySQL database.</p>
                         <div class="project-tech">
-                            <span class="tech-tag transform-element">Flutter</span>
-                            <span class="tech-tag transform-element">Riverpod</span>
-                            <span class="tech-tag transform-element">Hive</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Nginx</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn-small three-d-button">Live Demo</a>
-                            <a href="#" class="btn-small three-d-button">GitHub</a>
+                            <a href="https://maccindia.in/" class="btn-small">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Spotiflix</h3>
+                        <p>Spotiflix is a cross-platform media streaming application that combines the best features of music and video streaming services. Built with Flutter and Appwrite, it offers a seamless experience for browsing, discovering, and enjoying your favorite media content.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Appwrite</span>
+                            <span class="tech-tag">Provider</span>
+                            <span class="tech-tag">UI</span>
+                            <span class="tech-tag">Caching</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MogaPreet/spotiflix" class="btn-small">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>College Management System</h3>
+                        <p>The College Management System is a multi-module Flutter application that provides separate interfaces for students and teachers. It integrates various features essential for academic management, including attendance tracking, assignment submissions, event management, and more, all backed by Firebase services.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Gemini</span>
+                            <span class="tech-tag">Audio recording</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MogaPreet/CollegeManagement" class="btn-small">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Cinepolis App</h3>
+                        <p>Feature-rich cinema application with movie listings, food ordering, and loyalty program integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">GetX</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/search?q=cinepolis&c=apps" class="btn-small">Play Store</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>YashRaj Kozo</h3>
+                        <p>Client-focused application with custom UI, offline capabilities and seamless user experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Riverpod</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=io.binarynumbers.yashrajkozo" class="btn-small">Play Store</a>
                         </div>
                     </div>
                 </div>
@@ -125,52 +182,51 @@
         </div>
     </section>
 
-    <section id="contact" class="contact perspective-section">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title floating-element" data-depth="0.1">Get In Touch</h2>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <div class="contact-info three-d-card transform-element">
-                    <div class="contact-item floating-element" data-depth="0.2">
+                <div class="contact-info">
+                    <div class="contact-item">
                         <i class="fas fa-envelope icon-3d"></i>
-                        <p class="floating-text" data-depth="0.3">email@example.com</p>
+                        <p>preetmoga777@gmail.com</p>
                     </div>
-                    <div class="contact-item floating-element" data-depth="0.2">
+                    <div class="contact-item">
                         <i class="fas fa-phone icon-3d"></i>
-                        <p class="floating-text" data-depth="0.3">+1 (123) 456-7890</p>
+                        <p>+91 9313377651</p>
                     </div>
-                    <div class="contact-item floating-element" data-depth="0.2">
+                    <div class="contact-item">
                         <i class="fas fa-map-marker-alt icon-3d"></i>
-                        <p class="floating-text" data-depth="0.3">City, Country</p>
+                        <p>Mumbai, Maharashtra</p>
                     </div>
-                    <div class="social-links transform-element">
-                        <a href="#" class="hoverable-link" data-depth="0.2"><i class="fab fa-github icon-3d"></i></a>
-                        <a href="#" class="hoverable-link" data-depth="0.2"><i class="fab fa-linkedin icon-3d"></i></a>
-                        <a href="#" class="hoverable-link" data-depth="0.2"><i class="fab fa-twitter icon-3d"></i></a>
-                        <a href="#" class="hoverable-link" data-depth="0.2"><i class="fab fa-dribbble icon-3d"></i></a>
+                    <div class="social-links">
+                        <a href="https://github.com/MogaPreet"><i class="fab fa-github icon-3d"></i></a>
+                        <a href="https://www.linkedin.com/in/preet-moga/"><i class="fab fa-linkedin icon-3d"></i></a>
+                       
                     </div>
                 </div>
-                <form class="contact-form three-d-card transform-element">
-                    <div class="form-group floating-element" data-depth="0.2">
-                        <input type="text" placeholder="Your Name" required class="transform-element">
+                <form class="contact-form" id="contactForm" onsubmit="redirectToEmail(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
                     </div>
-                    <div class="form-group floating-element" data-depth="0.2">
-                        <input type="email" placeholder="Your Email" required class="transform-element">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
                     </div>
-                    <div class="form-group floating-element" data-depth="0.2">
-                        <textarea placeholder="Your Message" required class="transform-element"></textarea>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn three-d-button transform-element" data-depth="0.3">Send Message</button>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="perspective-section">
+    <footer>
         <div class="container">
-            <p class="floating-text" data-depth="0.1">&copy; 2025 <span class="accent transform-element">Preet Moga</span>. All Rights Reserved.</p>
-            <div class="back-to-top transform-element">
-                <a href="#" class="hoverable-link" data-depth="0.2">
-                    <i class="fas fa-arrow-up icon-3d"></i>
+            <p>From idea to impact</p>
+            <div class="back-to-top">
+                <a href="#">
+                    <i class="fas fa-arrow-up"></i>
                 </a>
             </div>
         </div>
@@ -215,81 +271,51 @@
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
+                    
+                    // Close mobile menu if it's open
+                    const navLinks = document.querySelector('.nav-links');
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                    }
+                    
+                    // Scroll to the section
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
                     });
                 });
             });
             
-            // Parallax effect
-            const parallaxElements = document.querySelectorAll('[data-depth]');
-            const perspectiveSections = document.querySelectorAll('.perspective-section');
-            
-            window.addEventListener('scroll', () => {
-                parallaxElements.forEach(element => {
-                    const depth = parseFloat(element.getAttribute('data-depth'));
-                    const scrollY = window.scrollY;
-                    const translateY = scrollY * depth;
-                    element.style.transform = `translateY(${translateY}px)`;
+            // Back to top button
+            document.querySelector('.back-to-top').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
                 });
-            });
-            
-            // Mouse move parallax effect
-            document.addEventListener('mousemove', (e) => {
-                const mouseX = e.clientX;
-                const mouseY = e.clientY;
-                
-                const windowWidth = window.innerWidth;
-                const windowHeight = window.innerHeight;
-                
-                const percentX = (mouseX / windowWidth - 0.5) * 2; // -1 to 1
-                const percentY = (mouseY / windowHeight - 0.5) * 2; // -1 to 1
-                
-                perspectiveSections.forEach(section => {
-                    const rect = section.getBoundingClientRect();
-                    
-                    if (rect.top < windowHeight && rect.bottom > 0) {
-                        const elements = section.querySelectorAll('.transform-element');
-                        
-                        elements.forEach(element => {
-                            // Only apply effect if the element is in view
-                            const elementRect = element.getBoundingClientRect();
-                            if (elementRect.top < windowHeight && elementRect.bottom > 0) {
-                                element.style.transform = `translateX(${percentX * 10}px) translateY(${percentY * 10}px)`;
-                            }
-                        });
-                    }
-                });
-            });
-            
-            // Float animation for floating elements
-            const addFloatAnimation = () => {
-                const floatingElements = document.querySelectorAll('.floating-element');
-                floatingElements.forEach((elem, index) => {
-                    elem.style.animation = `float 4s ease-in-out ${index * 0.2}s infinite`;
-                });
-            };
-            
-            addFloatAnimation();
-            
-            // Intersection Observer for fade-in effect
-            const fadeInElements = document.querySelectorAll('section, .three-d-card');
-            const fadeInObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            fadeInElements.forEach(element => {
-                element.style.opacity = '0';
-                element.style.transform = 'translateY(20px)';
-                element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-                fadeInObserver.observe(element);
             });
         });
+        function redirectToEmail(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    // Format the email subject and body
+    const subject = `Portfolio Contact from ${name}`;
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+    
+    // Create the mailto URL
+    const mailtoURL = `mailto:preetmoga777@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open the email client
+    window.location.href = mailtoURL;
+    
+    // Reset the form after a short delay
+    setTimeout(() => {
+        document.getElementById('contactForm').reset();
+    }, 1000);
+}
     </script>
 </body>
 </html>
