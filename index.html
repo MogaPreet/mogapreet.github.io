@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Preet Moga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="description" content="Portfolio of Preet Moga - Flutter Developer & Full Stack Developer">
 </head>
 
 <body>
+    <!-- Ambient Light Backgrounds -->
+    <div class="grid-background"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Preet Moga</div>
+                <div class="logo">Preet Moga <span class="logo-pill">PRO</span></div>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -27,15 +36,26 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Hi, I'm <span class="accent">Preet Moga</span></h1>
-            <p>Flutter & Full Stack Developer</p>
-            <a href="#contact" class="btn">Get in touch</a>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">Available for new opportunities</span>
+            </div>
+            <h1>Building exceptional <span class="accent-gradient">digital experiences</span></h1>
+            <p>Hi, I'm Preet Moga — Flutter & Full Stack Developer</p>
+            <p class="hero-description">Designing and developing clean, responsive mobile apps and scalable full-stack web applications with high performance and pixel-perfect precision.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get in touch</a>
+                <a href="#projects" class="btn btn-secondary">View Work <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-tagline">Introduction</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>I'm a passionate Flutter and Full Stack developer with a commitment to creating beautiful,
@@ -52,7 +72,10 @@
 
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <div class="section-header">
+                <span class="section-tagline">Capabilities</span>
+                <h2 class="section-title">My Skills</h2>
+            </div>
             <div class="skills-container">
                 <div class="skill-card">
                     <i class="fas fa-mobile-alt icon-3d"></i>
@@ -80,7 +103,10 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Recent Projects</h2>
+            <div class="section-header">
+                <span class="section-tagline">Portfolio</span>
+                <h2 class="section-title">Recent Projects</h2>
+            </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-info">
@@ -203,7 +229,10 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-tagline">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -224,7 +253,7 @@
 
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm" onsubmit="redirectToEmail(event)">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <input type="text" id="name" placeholder="Your Name" required>
                     </div>
@@ -251,91 +280,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Mobile navigation toggle
-            const createMobileNav = () => {
-                const nav = document.querySelector('.nav-links');
-                const navToggle = document.createElement('div');
-                navToggle.className = 'nav-toggle';
-                navToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                navToggle.style.display = 'none';
-                navToggle.style.fontSize = '1.5rem';
-                navToggle.style.cursor = 'pointer';
-                navToggle.style.color = 'var(--text)';
-
-                document.querySelector('nav').insertBefore(navToggle, nav);
-
-                navToggle.addEventListener('click', () => {
-                    nav.classList.toggle('active');
-                });
-
-                // Check if we need the mobile navigation
-                const checkScreenSize = () => {
-                    if (window.innerWidth <= 768) {
-                        navToggle.style.display = 'block';
-                    } else {
-                        navToggle.style.display = 'none';
-                        nav.classList.remove('active');
-                    }
-                };
-
-                window.addEventListener('resize', checkScreenSize);
-                checkScreenSize();
-            };
-
-            createMobileNav();
-
-            // Smooth scrolling for all anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    // Close mobile menu if it's open
-                    const navLinks = document.querySelector('.nav-links');
-                    if (navLinks.classList.contains('active')) {
-                        navLinks.classList.remove('active');
-                    }
-
-                    // Scroll to the section
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-
-            // Back to top button
-            document.querySelector('.back-to-top').addEventListener('click', function (e) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-        });
-        function redirectToEmail(event) {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Format the email subject and body
-            const subject = `Portfolio Contact from ${name}`;
-            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-
-            // Create the mailto URL
-            const mailtoURL = `mailto:preetmoga777@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-            // Open the email client
-            window.location.href = mailtoURL;
-
-            // Reset the form after a short delay
-            setTimeout(() => {
-                document.getElementById('contactForm').reset();
-            }, 1000);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

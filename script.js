@@ -293,29 +293,38 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(this);
-            const formValues = Object.fromEntries(formData.entries());
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
             
-            // Simulate form submission
+            // Format the email subject and body
+            const subject = `Portfolio Contact from ${name}`;
+            const body = `Name: ${name}\r\nEmail: ${email}\r\n\r\nMessage:\r\n${message}`;
+            
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
+            submitBtn.textContent = 'Opening Mail App...';
             
-            // Simulate API call
+            // Create the mailto URL and redirect
+            const mailtoURL = `mailto:preetmoga777@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoURL;
+            
             setTimeout(() => {
                 // Show success message
                 const successMsg = document.createElement('div');
                 successMsg.className = 'form-success';
-                successMsg.textContent = 'Message sent successfully!';
-                successMsg.style.color = '#42a5f5';
+                successMsg.textContent = 'Email client opened! Feel free to send the draft.';
+                successMsg.style.color = '#5e6ad2';
                 successMsg.style.padding = '1rem';
                 successMsg.style.marginTop = '1rem';
                 successMsg.style.borderRadius = '8px';
-                successMsg.style.background = 'rgba(66, 165, 245, 0.1)';
+                successMsg.style.background = 'rgba(94, 106, 210, 0.1)';
+                successMsg.style.border = '1px solid rgba(94, 106, 210, 0.2)';
                 successMsg.style.textAlign = 'center';
+                successMsg.style.fontSize = '0.9rem';
+                successMsg.style.fontWeight = '500';
                 
                 contactForm.appendChild(successMsg);
                 
@@ -332,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         successMsg.remove();
                     }, 500);
                 }, 5000);
-            }, 1500);
+            }, 1000);
         });
     }
 });
